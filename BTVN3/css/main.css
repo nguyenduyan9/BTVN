@@ -17,6 +17,10 @@ h1 {
     float: left;
 }
 
+.col-25.select {
+    margin-top: 18px;
+}
+
 .col-75 {
 
     width: 75%;
