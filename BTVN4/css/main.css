@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    margin: 0 20px;
+}
+
+.heading ul {
+    display: inline-block ;
+    border: 2px solid #DDC488;   
+}
+
+.heading li a {
+    text-decoration: none;
+     color: #DDC488;
+     display: inline-block;
+    padding: 4px 24px;
+
+}
+
+.heading li {
+    float: left;
+    list-style-type: none;
+}
+
+.heading li:hover a {
+    background-color: #DDC488;
+    color: #fff;
+}
+
+.row {
+    margin: 20px;
+}
+
+.col-25 {
+    width: 20%;
+    float: left;
+    padding-top: 40px;
+}
+
+.list-info {
+    }
+
+.col-25 > p {
+    margin-top: 20px;
+}
+
+.info {
+    margin-top: 20px;
+}
+
+   
+.col-75 {
+      width: 60%;
+      float: left;
+      margin-left: 80px;
+   }
+   

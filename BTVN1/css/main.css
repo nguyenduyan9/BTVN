@@ -1,0 +1,41 @@
+
+
+.main {
+    margin: 0 20px;
+}
+
+.header {
+     margin-left: 20px;
+}
+
+.contact {
+    width: 40%;
+    float: left;
+}
+
+.info-list {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.appoinment {
+    width: 60%;
+    float: left;
+}
+
+.appoinment-form {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.btn {
+    margin-top: 4px;
+}
+
+.btn-submit {
+    background-color: #897fff;
+    border: none;
+    color:#fff;
+    padding: 8px 8px;
+}
+
