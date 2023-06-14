@@ -1,4 +1,7 @@
 
+.row {
+    width: 100%;
+}
 
 .header h1 {
    text-align: center;
@@ -15,6 +18,12 @@ h1 {
 }
 
 .col-75 {
+
     width: 75%;
-    float: right;
+    float: left;
+}
+
+.col-75.btn {
+    text-align: center;
+    margin-left: -100px;
 }
