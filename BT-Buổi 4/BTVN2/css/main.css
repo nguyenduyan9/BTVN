@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.table {
+    width: 600px;
+    height: 380px;
+    background-color: #ddd;
+    padding-left: 40px;
+    padding-top: 40px;
+}
+
+.header,
+.heading {
+    text-align: center;
+    color: #45332b;
+}
+
+.header {
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.heading  {
+    margin-top: 30px;
+    font-family: 'Alfa Slab One', cursive;
+}
+
+.row {
+    width: 100%;
+}
+
+.col-50 {
+    width: 50%;
+    float: left;
+}
+
+.item {
+    margin-top: 20px;
+}
+
+.info::placeholder {
+    color: #000;
+    font-weight: 400;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    padding: 12px 8px;
+}
+
+
+.info {
+   width: 90%;
+}
+
+.btn {
+    
+     font-family: 'Alfa Slab One', cursive;
+     background-color:#990033 ;
+     color: #fff;
+     border-radius: 3px;
+     border: none;
+     width: 90%;
+     padding: 12px 8px;
+}
+
+
+
+ 
