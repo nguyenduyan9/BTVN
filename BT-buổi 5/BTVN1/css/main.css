@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: lato;
+    src: url(../fonts/Lato-Light.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: lobster;
+    src: url(../fonts/Lobster-Regular.ttf);
+    font-weight: 400;
+}
+
+body {
+    font-family: "lato",sans-serif;
+    font-size: 15px;
+}
+
+.mt20 {
+    margin-top: 20px;
+}
+
+.container {
+    margin: 0 30px;
+}
+
+.main {
+    width: 500px
+}
+
+
+.header {
+    font-family: 'lobster',sans-serif;
+}
+
+.header-text {
+    margin-top: 30px;
+}
+
+.form-list {
+
+}
+
+.form-name {
+    position: relative;
+}
+
+.form-message:hover,
+.form-subject:hover,
+.form-mobile:hover,
+.form-mail:hover,
+.form-name:hover {
+    border: solid 1px #000;
+}
+
+
+
+
+
+.input-item {
+    width: 460px;
+    margin-left: 40px;
+    padding: 10px 0;
+    border-radius: none;
+}
+
+
+.input-item {
+    position: relative;
+}
+
+.form-name label {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #ccc;
+    color: #fff;
+}
+
+.form-message:hover label,
+.form-subject:hover label,
+.form-mobile:hover label,
+.form-mail:hover label,
+.form-name:hover label {
+    background-color: #000;
+}
+
+
+.fa-user:before {
+    content: "";
+    position: absolute;
+    font-size: 24px;
+    top: 8px;
+    left: 10px;
+    padding: ;
+}
+
+
+
+.form-mail label {
+   position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #ccc;
+    color: #fff;
+    z-index: ;
+}
+
+.fa-regular::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    font-size: 24px;
+    left: 8px;
+}
+
+
+
+.form-mobile label {
+   position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #ccc;
+}
+
+
+.fa-mobile::before {
+    content: "";
+    position: absolute;
+    font-size: 24px;
+    top: 8px;
+    left: 12px;
+    color: #fff;
+}
+
+.form-subject label {
+   position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #ccc;
+}
+
+.fa-book-open::before {
+    content: "";
+    position: absolute;
+    font-size: 24px;
+    color: #fff;
+    top: 8px;
+    left: 8px;
+}
+
+.form-text {
+    position: relative;
+    margin-left: 40px;
+    width: 92%;
+    margin-right: 120px;
+}
+
+.form-message label {
+    position: absolute;
+    width: 40px;
+    height: 154px;
+    background-color: #ccc;
+}
+
+.fa-message::before {
+    color: #fff;
+}
+
+.footer-text {
+    float: left;
+    margin-top: 16px;
+}
+
+
+.footer-text p::before {
+    content: "";
+    position: relative;
+    border: solid #ccc 2px;
+    padding: 0 10px
+}
+
+.fa-check::before {
+    content: "";
+    position: absolute;
+    font-size: 24px;
+}
+
+.btn {
+    float: right;
+    margin-top: 20px;
+    padding: 4px 4px;
+}
+
+.btn input {
+    padding: 8px 30px;
+    color: #fff;
+    background-color: #ff2154;
+    border: none;
+}
+
+
+
+
+
+
+

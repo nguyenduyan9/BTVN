@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: roboto;
+    src: url(../fonts/Roboto-Light.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: roboto;
+    src: url(../fonts/Roboto-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: roboto;
+    src: url(../fonts/Roboto-Medium.ttf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: roboto;
+    src: url(../fonts/Roboto-Bold.ttf);
+    font-weight: 700;
+}
+
+h3 {
+    font-family: 'roboto',sans-serif;
+    padding: 8px 0px;
+    background-color: #ff5821;
+    margin-left: 32px;
+}
+  
+
+
+.content {
+    width: 800px;
+    margin: 0 40px;
+}
+
+.content p {
+    font-family: "roboto",sans-serif;
+}
+
+
+.color-header,
+.color-main,
+.color-footer{
+    display: none;
+}
+.header p,
+.main p,
+.footer p {
+    display: none;
+}
+
+.header .color-header:checked ~  p {
+    display: block;
+}
+
+.main .color-main:checked ~ p {
+    display: block;
+}
+
+.footer .color-footer:checked ~ p {
+    display: block;
+}
+
+
+.icon-header::before {
+    content: "+";
+    position: absolute;
+    font-size: 30px;
+    top: 0;
+    padding: 2px 7px;
+    left: 42px;
+    background-color: #ff5821;
+    color: #fff;
+}
+
+
+
+.header .color-header:checked ~ .icon-header::before {
+    content: "-";
+    position: absolute;
+    font-size: 30px;
+    top: 0;
+    padding: 2px 10px;
+    left: 42px;
+    background-color: #ff5821;
+    color: #fff;
+}
+
+.main {
+    position: relative;
+}
+
+
+.icon-main::before {
+    content: "+";
+    position: absolute;
+    font-size: 30px;
+    top: 0px;
+    padding: 2px 7px;
+    left: 2px;
+    background-color: #ff5821;
+    color: #fff;
+}
+
+.main .color-main:checked ~ .icon-main::before {
+    content: "-";
+    position: absolute;
+    font-size: 30px;
+    top: 0px;
+    padding: 2px 10px;
+    left: 2px;
+    background-color: #ff5821;
+    color: #fff;
+}
+
+.footer {
+    position: relative;
+}
+
+.icon-footer::before {
+    content: "+";
+    position: absolute;
+    font-size: 30px;
+    top: 0px;
+    padding: 2px 7px;
+    left: 2px;
+    background-color: #ff5821;
+    color: #fff;
+}
+
+.color-footer:checked ~ .icon-footer::before {
+    content: "-";
+    position: absolute;
+    font-size: 30px;
+    top: 0px;
+    padding: 2px 10px;
+    left: 2px;
+    background-color: #ff5821;
+    color: #fff;
+}
+
+
