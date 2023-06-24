@@ -1,0 +1,152 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: roboto;
+    src: url(../fonts/Roboto-Light.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: roboto;
+    src: url(../fonts/Roboto-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: roboto;
+    src: url(../fonts/Roboto-Medium.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: roboto;
+    src: url(../fonts/Roboto-Bold.ttf);
+    font-weight: 700;
+}
+
+.container {
+    width: 82%;
+    height: 500px;
+    background-color: #ebf5fe;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items: center ;
+}
+
+.main {
+    width: 300px;
+    height: 200px;
+    background-color: #fff ;
+    color: #666666;
+    display: flex;
+    border-radius: 10px;
+}
+    
+.section-digital,   
+.section {
+  position: relative;
+   margin: 10px;
+}
+
+ 
+.fa-solid::before {
+    content: "";
+    position: absolute;
+    top: 40px;
+    left: 18px;
+    font-size: 18px;
+    color: #fff;
+    z-index: 1;
+}
+
+
+
+h2::before {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 0px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(242, 92, 84);
+}
+
+.heading-digital::before {
+    background-color: rgb(253, 197, 80);
+}
+
+.heading-theme::before {
+    background-color: rgb(5, 215, 252);
+}
+
+.heading-design::before {
+    background-color: rgb(38, 52, 208);
+}
+
+.heading-responsive::before {
+    background-color: rgb(112, 40, 237);
+}
+
+.heading-quick::before {
+    background-color: rgb(4, 247, 118);
+}
+
+h2 {
+    margin-left: 60px;
+    font-family: "roboto",sans-serif;
+    font-weight: 500;
+}
+
+.text-section {
+    margin-top: 10px;
+    font-family: 'roboto',sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.link-section {
+    margin-top: 15px;
+}
+
+.link-section a {
+    text-decoration: none;
+    margin-top: 15px;
+    font-family: "roboto",sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+/* .header-theme {
+    position: relative;
+} */
+
+.main-digital:hover {
+    border: 2px solid rgb(253, 197, 80);
+   
+} 
+
+.main-unique:hover {
+    border: 2px solid rgb(242, 92, 84);
+} 
+
+
+.main-theme:hover {
+    border: 2px solid rgb(5, 215, 252);
+}
+
+.main-design:hover {
+    border: 2px solid  rgb(38, 52, 208);
+}
+
+.main-responsive:hover {
+    border: 2px solid  rgb(112, 40, 237);
+}
+
+.main-quick:hover {
+    border: 2px solid  rgb(4, 247, 118);
+}

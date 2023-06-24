@@ -1,0 +1,263 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family:nunito;
+    src: url(../fonts/Nunito-Light.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family:nunito;
+    src: url(../fonts/Nunito-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family:nunito;
+    src: url(../fonts/Nunito-Medium.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family:nunito;
+    src: url(../fonts/Nunito-Bold.ttf);
+    font-weight: 700;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    height: 50vw;
+    background-image: url(http://uiwebsoft.com/justlog/login-one/images/login-bg2.jpg) ;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+/* login begin */
+.modal {
+    height: 350px;
+    display: inline-flex;
+}
+
+.modal-login {
+   
+    background-color: #fff;
+    padding: 30px 30px;
+    width: 300px;
+    border-radius: 4px;
+}
+
+
+.modal-heading h3 {
+    text-align: center;
+    font-family: "nunino",sans-serif;
+    font-family: 400;
+    position: relative;
+             
+}
+
+.modal-heading h3::after {
+    content: "";
+    position: absolute;
+    left: 120px;
+    top: 30px;
+    display: block;
+    width: 40px;
+    height: 1px;
+    background-color: #ff574d;
+}
+
+.modal-heading b {
+    color: #ff574d;
+}
+
+.modal-form {
+    margin-top: 40px;
+}
+
+.form-accoutn {
+    width: 100%;
+    padding: 8px 0px;
+    margin-top: 15px;
+}
+
+.form-sub {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    color:  #717171;
+    font-family: "nonino",sans-serif;
+    font-family: 300;
+    font-size: 14px;
+}
+
+.form-sub a{
+    text-decoration: none;
+    color: #717171;
+    font-size: 14px;
+
+}
+
+.btn {
+    width: 100%;
+    margin-top: 15px;
+    padding: 8px 0px;
+    background-color: #ff574d;
+    border: none;
+    color: #fff;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.text-form {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.text-form a {
+    text-decoration: none;
+    color: #717171;
+    font-family: "nonino",sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+/* end */
+
+/* just log begin */
+
+.modal-more {
+    display: inline-flex;
+    height: 350px;
+    
+}
+
+.content-more {
+    background-color: #ff574d;
+    width: 250px;
+    padding: 60px 15px;
+    border-radius: 4px;
+}
+
+.header-more {
+    display: flex;
+    justify-content: center;
+    font-family: "nonino",sans-serif;
+    font-size: 400;
+    color: #fff;
+    cursor: pointer;
+}
+
+.icon-more,
+.heading-more {
+    display: inline-flex;
+}
+
+.icon-more {
+    align-items: center;
+    margin-right: 5px;
+    background-color: #fff;
+    padding: 0px 4px;
+    border-radius: 4px;
+    color: #ff574d;
+    font-family: "nonino",sans-serif;
+    font-weight: 400;
+}
+
+.text-more {
+    margin-top: 20px;
+    text-align: center;
+    text-align: justify;
+    color: #fff;
+}
+
+.text-more p {
+    font-size: 14px;
+    font-family:"nonino",sans-serif;
+    font-weight: 300;
+}
+
+.btn-more {
+    margin:30px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-more button {
+    padding: 8px 20px;
+    background-color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-family:"nonino",sans-serif;
+    font-weight: 300;
+    color: #ff574d;
+    cursor: pointer;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    margin-right: 8px;
+}
+
+.icon-facebook,
+.icon-twitter,
+.icon-google,
+.icon-linkedin {
+    display: inline-flex;
+    padding: 2px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 8px;
+    background-color: rgba(225, 225, 225, 0.2);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.fa-brands {
+    color: #fff;
+    font-size: 16px;
+}
+
+/* end */
+
+/* btn back  begin*/
+
+.btn-back {
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: 1px 1px 1px 1 #ccc;
+    left: 570px;
+    top: 290px;
+    box-shadow: 0px 0px 0px 1px #ccc;
+}
+
+.back {
+    display: none;
+}
+
+.icon-back::before {
+    color: #ff574d;
+    position: absolute;
+    top: 12px;
+    left: 10px;
+}
+
+/* .back:checked ~ .modal {
+    display: none
+} */
+
+
+
