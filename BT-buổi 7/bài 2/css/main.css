@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: asap;
+    src: url(../fonts/Asap_Condensed-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: asap;
+    src: url(../fonts/Asap_Condensed-Light.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: asap;
+    src: url(../fonts/Asap_Condensed-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: asap;
+    src: url(../fonts/Asap_Expanded-Medium.ttf);
+    font-weight: 500;
+}
+
+
+.banner {
+    background: url(https://ircdn.vingroup.net/storage/Uploads/Photos/Landmark81banner.jpg)no-repeat center / cover;
+    position: relative;
+    width: 100%;
+    height: 350px;
+    /* padding-top: 30%; */
+    overflow: hidden;
+}
+
+.banner .avatar {
+    width: 25vw;
+    height: 15vw;
+    position: absolute;
+    bottom: 0px;
+    left: 40px;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.avatar img {
+    width: 80%;
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
+}
+
+.header {
+    height: 15vw;
+    position: absolute;
+    bottom: 0px;
+    left: 25%;
+    padding: 30px 50px;
+    color: #fff;
+    z-index: 1;
+}
+
+.header h2 {
+    font-family: "asap",sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.header .text {
+    margin-top: 30px;
+    font-family: "asap",sans-serif;
+    font-size: 16px;
+}
+
+.project {
+    margin-left: 20px;
+}
+
+.number {
+    font-size: 24px;
+    font-family: "asap";
+    font-weight: 400;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0 , 0, 0.2);
+}
+
+.nav {
+    display: flex;
+    float: right;
+    margin-right: 50px;
+}
+
+.nav li {
+    list-style-type: none;
+    display: inline-flex;
+    padding:4px 8px ;
+
+}
+
+.nav li a {
+    text-decoration: none;
+    font-family: "asap";
+    font-weight: 500;
+    font-size: 16px;
+    color: #000;
+    position: relative;
+}
+
+.nav li a::after {
+    content: "";
+    display: none;
+    height: 2px;
+    width: 100%;
+    background-color: red;
+    position: absolute;
+    top: 22px;
+}
+
+.nav li:hover a::after {
+    display: block;
+    animation-name: run;
+    animation-duration: 1s;
+}
+
+@keyframes run {
+    from {width: 0;
+    }
+    to {
+        width: 100%;
+    }
+
+}
+
+.nav li:hover a {
+    color: red;
+}

@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+@font-face {
+    font-family: asap;
+    src: url(../fonts/Asap_Condensed-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: asap;
+    src: url(../fonts/Asap_Condensed-Light.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: asap;
+    src: url(../fonts/Asap_Condensed-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: asap;
+    src: url(../fonts/Asap_Expanded-Medium.ttf);
+    font-weight: 500;
+}
+
+.container {
+    position: relative;
+    height: 500px;
+    /* padding-top: 32%; */
+    background: url(  https://cdn.houseviet.vn/images/project/23042023/ha-noi-melody-residences-cover.jpg)no-repeat center / cover;
+}
+
+.content {
+    top: 30%;
+    left: 10%;
+    width:40%;
+    position: absolute;
+    background-color: rgba(255, 255, 255,0.8);
+}
+
+.content-item {
+    padding: 30px 15px;
+    position: relative;
+}
+
+.content h2 {
+    font-weight: 500;
+    color: #bf4240;
+    font-family: "asap",sans-serif;
+}
+
+.text-content {
+    margin-top: 15px;
+}
+
+.text-content {
+    color: 14px;
+    line-height: 1.4;
+    font-weight: 300;
+    font-family: "asap",sans-serif;
+}
+
+.location {
+    margin-top: 5px;
+}
+
+.location i {
+    color: #000;
+}
+
+.location span {
+    margin-left: 5px;
+}
+
+.price {
+    right: 20px;
+    width: 65px;
+    bottom:-12px;
+    height: 20px;
+    color: #fff;
+    border-radius: 2px;
+    padding: 4px 8px;
+    position: absolute;
+    background-color: #bf4240;
+    font-family:"asap",sans-serif;
+    font-weight: 400    ;
+}
