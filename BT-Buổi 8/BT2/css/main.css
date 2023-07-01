@@ -1,0 +1,233 @@
+* {
+    padding: 0; 
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+@font-face {
+    font-family: nunito;
+    src: url(../fonts/Nunito-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: nunito;
+    src: url(../fonts/Nunito-Light.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: nunito;
+    src: url(../fonts/Nunito-Medium.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: nunito;
+    src: url(../fonts/Nunito-Regular.ttf);
+    font-weight: 400;
+}
+
+.container {
+    width: 100%;
+    height: 378px;
+    display: flex;
+    border: 1px solid;
+}
+
+.overlay {
+    width: calc(100% - 300px);
+    background-color: #84898e;
+}
+
+.main {
+    width: 300px;
+    float: right;
+}
+
+.content {
+    padding:0 20px ;
+    height:140px ;
+    overflow: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f2efef;
+    padding:10px 30px;
+}
+
+.heading {
+    font-family: "nunito",sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.heading::after {
+    content: "4";
+    width: 10px;
+    height: 10px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    top: -14px;
+    border-radius: 50%;
+    font-size: 10px;
+    background-color: #5d5afc;
+    color: #fff;
+}
+
+.header-close {
+    height: 15px;
+    width: 15px;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #ff6100;
+    color: #fff;
+}
+
+.product {
+    height: 70px;
+    display: flex;
+    justify-content:space-around;
+    border-bottom:#f7f2f2 1px solid  ;
+}
+
+.product-img {
+    /* padding:5px ; */
+    /* background-color:#f4f3eb; */
+}
+
+img {
+    width: 35px;
+}
+
+.product-content {
+    position: relative;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-bet;
+    opacity: .6;
+}
+
+
+.quatity {
+    display: flex;
+    width: 60px;
+    height: 18px;
+    border: 1px solid #000;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 90px;
+}
+
+.price {
+    font-size: 14px;
+}
+
+.product-content::after {
+    font-size: 12px;
+    content: "1x$570";
+    position: absolute;
+    top: 30px;
+    left: 100px;
+    font-family: "nunito",sans-serif;
+    font-weight: 700;
+}
+
+.product-close {
+    font-size: 12px;
+    opacity: .6;
+}
+
+.footer {
+    padding: 20px 20px 10px 20px;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+}
+
+.total p {
+    font-family: "nunito",sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.total span {
+    color: #ff6100;
+}
+
+.text-toal {
+    margin-top: 5px;
+    font-family: "nunito",sans-serif;
+    font-weight: 300;
+    font-size: 10px;
+}
+
+.btn-view {
+    margin-top: 5px;
+    /* width: 100%; */
+}
+
+.btn-view {
+    font-family: "nunito",sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.btn-view button {
+    opacity: 0.8;
+    background-color: #fff;
+    border: 1px solid #000;
+}
+
+button {
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 4px;
+    border: none;
+}
+
+.btn-add-cart {
+    margin-top: 10px;
+}
+
+.btn-add-cart button {
+    background-color:#5956ff ;
+    color: #fff;
+}
+
+.btn-add-cart button:hover {
+    opacity: .8;
+}
+
+.spend {
+    font-size: 12px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.car img {
+    width: 25px;
+}
+
+.car {
+    width: 25px;
+    height: 25px;
+    border: 1px solid red;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+}
+
+
+

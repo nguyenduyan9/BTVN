@@ -1,0 +1,109 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: roboto;
+    src: url(../fonts/Roboto-Bold.ttf);
+    font-weight: 700;
+}
+
+
+@font-face {
+    font-family: roboto;
+    src: url(../fonts/Roboto-Light.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: roboto;
+    src: url(../fonts/Roboto-Medium.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: roboto;
+    src: url(../fonts/Roboto-Regular.ttf);
+    font-weight: 400;
+}
+
+.container {
+    margin: 0 15px;
+
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.header h2 {
+    font-family: "roboto",sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.header p {
+    font-family: "roboto",sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content .product {
+    margin-top: 60px;
+    max-width: 33.33333%;
+    text-align: center;
+    position: relative;
+    min-height: 250px;
+    padding: 0 15px;
+}
+
+
+
+.product img {
+    max-width: 100%;
+}
+
+.product .product-heading {
+    margin-top: 15px;
+    font-size: 12px;
+    font-family: "roboto",sans-serif;
+    font-weight: 700;
+}
+
+.product .product-text {
+    margin-top: 15px;
+    font-size: 14px;
+    font-family: "roboto",sans-serif;
+    font-size: 300;
+    opacity:0.6 ;
+}
+
+.btn {
+    margin-top: 20px;
+    position: absolute;
+     bottom: 0;
+    left: 0;
+    right: 0; 
+
+}
+
+.btn button {
+    border: none;
+    width: 120px;
+    padding: 12px 16px;
+    background-color: #253993;
+    color: #fff;
+    border-radius: 2px;
+    font-family: "roboto",sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+}

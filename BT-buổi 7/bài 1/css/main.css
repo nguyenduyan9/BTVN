@@ -4,6 +4,8 @@
     box-sizing: 0;
 }
 
+
+
 @font-face {
     font-family: asap;
     src: url(../fonts/Asap_Condensed-Bold.ttf);
@@ -84,9 +86,10 @@
     height: 20px;
     color: #fff;
     border-radius: 2px;
-    padding: 4px 8px;
+    padding: 8px 12px;
+    font-size: 16px;
     position: absolute;
     background-color: #bf4240;
     font-family:"asap",sans-serif;
-    font-weight: 400    ;
+    font-weight: 700 ;
 }
