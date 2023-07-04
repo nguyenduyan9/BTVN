@@ -1,0 +1,29 @@
+@font-face {
+    font-family:"inter";
+    src: url(../fonts/Inter-Light.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family:"inter";
+    src: url(../fonts/Inter-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family:"spaceGrotesk";
+    src: url(../fonts/SpaceGrotesk-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family:"spaceGrotesk";
+    src: url(../fonts/SpaceGrotesk-Medium.ttf);
+    font-weight: 500;
+}
+
+:root {
+    font-family:"inter","spaceGrotesk",sans-serif;
+    --text-color:#333;
+    --text-size:0.6rem;
+}
