@@ -1,0 +1,111 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: blue;
+    display: flex;
+    height: 500px;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.content {
+    padding: 100px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+.content .inspired {
+    font-size: 12px;
+    line-height: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.menu input {
+    position: absolute;
+    z-index: 1;
+    display: none;
+}
+
+.menu label:before {
+    content: "\f0c9";
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 18px;
+    z-index: 1;
+    display: block;
+    color: blue;
+    cursor: pointer;
+}
+
+.menu span {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    display: block;
+    position: absolute;
+    border-radius:0 0 99px 0;
+    transition: all .20s ease;
+}
+
+.menu input:checked ~ span {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+}
+
+.menu input:checked ~ label::before {
+    content: "\f309";
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 18px;
+    z-index: 1;
+    display: block;
+    color: blue;
+    transform: rotateZ(90deg);
+    transition: all .4s ease;
+   cursor: pointer;
+}
+
+.list-item {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 40px;
+    left: 30px;
+}
+
+.item {
+    color: blue;
+    line-height: 24px;
+    padding: 4px 24px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.item:hover {
+    background-color: #ccc
+    
+}
+
