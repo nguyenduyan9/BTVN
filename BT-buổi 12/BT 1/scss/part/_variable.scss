@@ -1,0 +1,61 @@
+@font-face {
+    font-family: titilliumWep;
+    src: url(../fonts/TitilliumWeb-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: titilliumWep;
+    src: url(../fonts/TitilliumWeb-Light.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: titilliumWep;
+    src: url(../fonts/TitilliumWeb-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family:titilliumWep ;
+    src: url(../fonts/TitilliumWeb-Black.ttf);
+    font-weight: 900;
+}
+
+@font-face {
+    font-family:rajdhnai;
+    src: url(../fonts/Rajdhani-Bold.ttf);
+    font-weight: 900;
+}
+
+@font-face {
+    font-family:rajdhnai;
+    src: url(../fonts/Rajdhani-SemiBold.ttf);
+    font-weight:600 ;
+}
+
+@font-face {
+    font-family:rajdhnai;
+    src: url(../fonts/Rajdhani-Medium.ttf);
+    font-weight:500 ;
+}
+
+@font-face {
+    font-family:rajdhnai;
+    src: url(../fonts/Rajdhani-Light.ttf);
+    font-weight:300 ;
+}
+
+
+
+$font-family:"titilliumWep","sans-serif";
+$whiteColor:#fff;
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-betweeen {
+    justify-content: space-between;
+}
+

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./font-icon/all.min.css" />
+    <link rel="stylesheet" href="./css/gird.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row justify-content-center">
+        <input type="radio" name="account" id="login" hidden checked />
+        <input type="radio" name="account" id="register" hidden />
+
+        <div class="header">
+          <div class="col-sm-12">
+            <p>WELCOME TO</p>
+            <h1>vikinger</h1>
+            <div class="switch-btn">
+              <label class="login-btn" for="login">Login</label>
+              <label class="register-btn" for="register">Register</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="content register-content">
+          <div class="col-sm-12">
+            <div class="heading">
+              <h2>Create your Account !</h2>
+            </div>
+
+            <form class="form" action="" method="post">
+              <div class="form-email">
+                <input class="form-input" type="email" placeholder=" " />
+                <label class="form-label" for="email">Your Email</label>
+              </div>
+              <div class="form-name">
+                <input class="form-input" type="text" placeholder=" " />
+                <label class="form-label" for="name">Username</label>
+              </div>
+              <div class="form-password">
+                <input class="form-input" type="password" placeholder=" " />
+                <label class="form-label" for="password">password</label>
+              </div>
+              <div class="form-repeat">
+                <input class="form-input" type="password" placeholder=" " />
+                <label class="form-label" for="reapeat_password"
+                  >repeat password</label
+                >
+              </div>
+              <label class="check-email">
+                <input class="check" type="checkbox" name="" id="" hidden />
+                <span class="check-input"
+                  >Send me news and updates via email</span
+                >
+              </label>
+              <div class="btn">
+                <a href="#">Register Now</a>
+              </div>
+            </form>
+
+            <div class="text-content">
+              You'll receive a confirmation email in your inbox with a link to
+              activate your account. If you have any problems,<a href="#"
+                >contact us!</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="content login-content">
+          <div class="col-sm-12">
+            <div class="heading">
+              <h2>Account Login</h2>
+            </div>
+            <div class="form">
+              <div class="form-email">
+                <input class="form-input" type="email" placeholder=" " />
+                <label class="form-label" for="email">Username or Email</label>
+              </div>
+              <div class="form-password">
+                <input class="form-input" type="password" placeholder=" " />
+                <label class="form-label" for="password">password</label>
+              </div>
+
+              <label class="check-email justify-content-betweeen">
+                <input
+                  class="check"
+                  type="checkbox"
+                  name=""
+                  id=""
+                  hidden
+                  checked
+                />
+                <span class="check-input">Remember Me</span>
+                <span class="forgot">Forgot Password?</span>
+              </label>
+
+              <div class="btn color-btn-login">
+                <a href="#">Login to your Account!</a>
+              </div>
+            </div>
+
+            <div class="social">
+              <div class="heading-social">
+                <h3>Login with your Social Account</h3>
+              </div>
+              <div class="social-list">
+                <div class="social-item social-facebook">
+                  <a href="#">
+                    <i class="fa-brands fa-facebook"></i>
+                  </a>
+                </div>
+                <div class="social-item social-twitter">
+                  <a href="#">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                </div>
+                <div class="social-item social-youtobe">
+                  <a href="#">
+                    <i class="fa-brands fa-youtube"></i>
+                  </a>
+                </div>
+                <div class="social-item social-instagram">
+                  <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,364 @@
+.conteiner {
+  background-image: url(../img/landing-background.jpg);
+}
+
+@font-face {
+  font-family: titilliumWep;
+  src: url(../fonts/TitilliumWeb-Bold.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: titilliumWep;
+  src: url(../fonts/TitilliumWeb-Light.ttf);
+  font-weight: 300;
+}
+@font-face {
+  font-family: titilliumWep;
+  src: url(../fonts/TitilliumWeb-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: titilliumWep;
+  src: url(../fonts/TitilliumWeb-Black.ttf);
+  font-weight: 900;
+}
+@font-face {
+  font-family: rajdhnai;
+  src: url(../fonts/Rajdhani-Bold.ttf);
+  font-weight: 900;
+}
+@font-face {
+  font-family: rajdhnai;
+  src: url(../fonts/Rajdhani-SemiBold.ttf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: rajdhnai;
+  src: url(../fonts/Rajdhani-Medium.ttf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: rajdhnai;
+  src: url(../fonts/Rajdhani-Light.ttf);
+  font-weight: 300;
+}
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-betweeen {
+  justify-content: space-between;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "titilliumWeb", "sans serif";
+}
+
+@media screen and (min-width: 576px) {
+  .container {
+    background-image: url(https://hoanganf8.github.io/htmlcss_project02/image/landing-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 80px;
+    padding-bottom: 100px;
+    position: relative;
+    min-height: 1200px;
+  }
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.header p {
+  font-family: "titilliumWep", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: center;
+}
+.header h1 {
+  font-family: "titilliumWep", sans-serif;
+  font-weight: 900;
+  font-size: 6.5rem;
+  text-transform: uppercase;
+  letter-spacing: -10px;
+  position: relative;
+  line-height: 1em;
+  top: -10px;
+  display: flex;
+  justify-content: center;
+}
+
+.switch-btn {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.switch-btn label {
+  width: 180px;
+  height: 54px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #fff;
+  font-size: 1rem;
+  font-family: "titilliumWep", sans-serif;
+  font-weight: 700;
+  color: #fff;
+}
+.switch-btn .login-btn {
+  border-radius: 12px 0 0 12px;
+}
+.switch-btn .register-btn {
+  border-radius: 0px 12px 12px 0px;
+}
+
+#login:checked ~ .header .switch-btn .login-btn {
+  background-color: #fff;
+  color: #333;
+}
+
+#register:checked ~ .header .switch-btn .register-btn {
+  background-color: #fff;
+  color: #333;
+}
+
+#login:checked ~ .register-content {
+  display: block;
+}
+
+#register:checked ~ .login-content {
+  display: block;
+}
+
+.register-content {
+  display: none;
+  transition: all 0.4s ease;
+}
+
+.content {
+  margin-top: 60px;
+  width: 90%;
+  background-color: #fff;
+  padding: 64px;
+  border-radius: 12px;
+  font-family: "titilliumWep", sans-serif;
+  position: absolute;
+  top: 325px;
+  left: auto;
+  right: auto;
+}
+.content h2 {
+  font-size: 1.625rem;
+  display: flex;
+  justify-content: center;
+  line-height: 1em;
+  color: #3e3f5e;
+  font-family: "rajdhnai", sans-serif;
+}
+.content .form {
+  margin-top: 46px;
+}
+.content .form .form-name,
+.content .form .form-password,
+.content .form .form-repeat,
+.content .form .form-email {
+  position: relative;
+}
+.content .form .form-input {
+  width: 100%;
+  height: 54px;
+  padding: 0 18px;
+  margin-top: 30px;
+  border-radius: 12px;
+  border: 1px solid #dedeea;
+  padding: 18px;
+  transition: top 0.4s ease;
+}
+.content .form .form-input:focus {
+  border: 1px solid #6610f2;
+}
+.content .form .form-input:not(:placeholder-shown) + .form-label,
+.content .form .form-input:focus + .form-label {
+  top: 10px;
+  display: block;
+  padding: 0 10px;
+  background-color: #fff;
+  font-size: 0.8rem;
+  color: #6610f2;
+}
+.content .form .form-label {
+  color: #adafca;
+  font-size: 1rem;
+  font-family: "rajdhnai", sans-serif;
+  font-weight: 500;
+  position: absolute;
+  top: 50%;
+  transform: translateY(50%);
+  left: 18px;
+  pointer-events: none;
+}
+.content .form .check-email {
+  margin-top: 28px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.content .form .check-email .check-input {
+  font-size: 0.875rem;
+  font-family: "rajdhnai", sans-serif;
+  font-weight: 600;
+  padding-left: 34px;
+  position: relative;
+}
+.content .form .check-email .check-input::before {
+  content: "\f00d";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  color: #fff;
+  width: 25px;
+  height: 25px;
+  border-radius: 8px;
+  position: absolute;
+  top: -5px;
+  left: 0px;
+  text-align: center;
+  line-height: 26.33px;
+  font-size: 16px;
+  border: 1px solid #dedeea;
+}
+.content .form .check:checked + .check-input::before {
+  display: block;
+  background-color: #1bc5d4;
+}
+.content .form .btn {
+  opacity: 0.8;
+  width: 100%;
+  height: 54px;
+  background-color: #23d2e2;
+  color: #fff;
+  margin-top: 30px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content .form .btn > a {
+  text-decoration: none;
+  font-family: "rajdhnai", sans-serif;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: #fff;
+}
+.content .form .btn:hover {
+  opacity: 1;
+}
+.content .text-content {
+  margin-top: 30px;
+  font-size: 0.8rem;
+  font-family: "rajdhnai", sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
+}
+.content .text-content a {
+  text-decoration: none;
+  color: #23d2e2;
+}
+
+.login-content {
+  transition: all 0.4s ease;
+  display: none;
+}
+.login-content .forgot {
+  font-family: "rajdhnai", sans-serif;
+  font-weight: 700;
+  font-size: 0.875rem;
+  color: #adafca;
+}
+.login-content .form .color-btn-login {
+  background-color: #615dfa;
+}
+.login-content .social {
+  margin-top: 40px;
+}
+.login-content .social .heading-social {
+  color: #3e3f5e;
+  font-size: 0.7rem;
+  font-family: "rajdhnai", sans-serif;
+  font-weight: 700;
+  line-height: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.login-content .social .heading-social::before {
+  content: "";
+  width: 70px;
+  height: 1px;
+  display: block;
+  background-color: #eaeaf5;
+  position: absolute;
+  left: 0;
+}
+.login-content .social .heading-social::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 70px;
+  height: 1px;
+  display: block;
+  background-color: #eaeaf5;
+}
+.login-content .social .social-list {
+  margin-right: 12px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.login-content .social .social-list .social-item {
+  margin-left: 12px;
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s ease;
+}
+.login-content .social .social-list .social-item :hover {
+  margin-bottom: 20px;
+  cursor: pointer;
+  transform: translateY(20px);
+}
+.login-content .social .social-list .social-item a {
+  text-decoration: none;
+  color: #fff;
+}
+.login-content .social .social-list .social-facebook {
+  font-size: 14px;
+  background-color: #615df9;
+}
+.login-content .social .social-list .social-twitter {
+  background-color: #1abcff;
+}
+.login-content .social .social-list .social-youtobe {
+  background-color: #fd434f;
+}
+.login-content .social .social-list .social-instagram {
+  background-color: #7b5dfa;
+}
+
+/*# sourceMappingURL=style.css.map */

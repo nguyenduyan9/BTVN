@@ -1,0 +1,18 @@
+
+
+.conteiner {
+    background-image: url(../img/landing-background.jpg)
+}
+
+// part
+
+@import 'part/variable';
+@import'part/reset';
+
+// layout 
+
+@import 'layout/container'; 
+@import 'layout/header';
+@import'layout/btn';
+@import'layout/content'
+

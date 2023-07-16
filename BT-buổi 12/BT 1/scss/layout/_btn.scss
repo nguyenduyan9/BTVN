@@ -1,0 +1,53 @@
+.switch-btn {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    label {
+        width: 180px;
+        height: 54px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid $whiteColor;  
+        font-size: 1rem;
+        font-family:"titilliumWep",sans-serif ;
+        font-weight: 700;
+        color: $whiteColor;
+      
+    }
+
+    .login-btn {
+        border-radius: 12px 0 0 12px;
+    }
+
+    .register-btn {
+        border-radius: 0px 12px 12px 0px;
+
+    }
+}
+
+
+#login:checked ~ .header .switch-btn .login-btn {
+    background-color: #fff;
+    color: #333;
+}
+
+#register:checked ~ .header .switch-btn .register-btn {
+    background-color: #fff;
+    color: #333;
+}
+
+#login:checked ~ .register-content {
+
+    display: block;
+}
+
+#register:checked ~ .login-content{
+    display: block;
+}
+   
+
+
+
+
