@@ -1,22 +1,24 @@
 .register-content {
-    // opacity: 0;
-    // z-index: 0;
-    display: none;
     transition: all .4s ease;
+    display: block;
+    z-index: 0;
+    // opacity: 0;
+}
 
+.container {
+    position: relative;
 }
 
 .content {
     margin-top: 60px;
-    width: 90%;
     background-color: $whiteColor;
+    width: 484px;
     padding: 64px;
     border-radius: 12px;
     font-family:"titilliumWep",sans-serif ;
-    position: absolute;
-    top: 325px;
-    left: auto;
-    right: auto;
+    // position: absolute;
+    // top: 0px;
+   
 
     h2 {
         font-size: 1.625rem;
@@ -150,6 +152,8 @@
 .login-content {
     transition: all .4s ease;
     display: none;
+    z-index: 0;
+    opacity: 0;
    .forgot {
         font-family:'rajdhnai',sans-serif ;
         font-weight: 700;
@@ -246,4 +250,80 @@
     }
 
 }
+
+@media screen and (max-width:318px) {
+
+}
+
+
+@media screen and (max-width:500px) {
+    .header h1 {
+        font-size: 3.75rem;
+
+    }
+
+    .header {
+
+        .switch-btn {
+            width: 100%;
+        }
+        
+        .login-btn,
+        .register-btn {
+            width: 50%;
+        }
+    }
+}
+
+
+ @media screen and (max-width:600px) {
+ .container {
+    margin-left:30px ;
+    margin-right: 30px;
+    max-width: 542px;
+ }
+
+}
+
+@media screen and (max-width:1365px) {
+    .main {
+        height:1200px;
+
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+        .content {
+           
+        }
+    }
+}
+
+
+@media screen and (max-width:1700px) {
+    .main {
+        min-height: 100vh;
+        padding: 0;
+
+    }
+
+    .row {
+        display: flex;
+
+        // .header-inner {
+        //     display: flex;
+        //     align-items: center;
+        // }
+
+        .content {
+            margin-top: 0;
+            .login-content {
+                
+            }
+        }
+    }
+
+}
+
+
 

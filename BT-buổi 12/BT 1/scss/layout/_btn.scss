@@ -38,14 +38,27 @@
     color: #333;
 }
 
-#login:checked ~ .register-content {
+// #login:checked ~ .col-12 .register-content {
+//     display: block;
+//     z-index: 1;
+//     opacity: 1;
+// }
 
-    display: block;
+#login:checked ~ .col-12 .form .form-input:focus + .active-email{
+    top:10px;
+    display:block;
+    padding: 0 10px;
+    background-color: $whiteColor;
+    font-size: 0.8rem;
+    color:  #6610f2;
 }
 
-#register:checked ~ .login-content{
-    display: block;
-}
+
+// #register:checked ~ .col-12 .login-content{
+//     display: block;
+//     z-index: 1;
+//     opacity: 1;
+// }
    
 
 

@@ -12,16 +12,17 @@
     }
 
     h1 {
-        font-family: 'titilliumWep',sans-serif;
+        font-family:'titilliumWep';
         font-weight: 900;
         font-size: 6.5rem;
         text-transform: uppercase;
-        letter-spacing: -10px;
         position: relative;
         line-height: 1em;
         top:-10px;
         display: flex;
         justify-content: center;
+        flex-shrink: 1;
+        width: 484px;
     }
 
    

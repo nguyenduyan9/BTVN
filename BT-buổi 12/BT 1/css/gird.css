@@ -17,7 +17,7 @@ Quy ước: Triển khai theo Mobile First
   }
   
   :root {
-    --container-width: 1200px;
+    --container-width: 1700px;
     --container-padding: 15px;
     --max-column: 12;
     --column-space: 24px;
@@ -293,7 +293,7 @@ Quy ước: Triển khai theo Mobile First
     }
   }
   
-  @media screen and (min-width: 1400px) {
+  @media screen and (min-width: 1365px) {
     .container {
       padding: 0;
     }

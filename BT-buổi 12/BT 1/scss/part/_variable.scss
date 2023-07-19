@@ -17,7 +17,7 @@
 }
 
 @font-face {
-    font-family:titilliumWep ;
+    font-family:titilliumWep;
     src: url(../fonts/TitilliumWeb-Black.ttf);
     font-weight: 900;
 }
@@ -53,6 +53,11 @@ $whiteColor:#fff;
 
 .justify-content-center {
     justify-content: center;
+  
+}
+
+.align-items-center {
+    align-items: center;
 }
 
 .justify-content-betweeen {
