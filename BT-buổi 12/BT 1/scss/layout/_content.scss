@@ -1,6 +1,6 @@
 .register-content {
     transition: all .4s ease;
-    display: block;
+    display: none;
     z-index: 0;
     // opacity: 0;
 }
@@ -209,6 +209,9 @@
             display: flex;
             flex-direction: row;
             justify-content: center;
+            .social-link:hover .social-item {
+                transform: translateY(-10px);
+            }
             .social-item {
                 margin-left: 12px;
                 width: 40px;
@@ -219,16 +222,16 @@
                 justify-content: center;
                 align-items: center;
                 transition: all .4s ease;
-                :hover  {
-                    margin-bottom: 20px;
-                    cursor: pointer;
-                    transform: translateY(20px);
-                }
+                // :hover  {
+                //     margin-bottom: 20px;
+                //     cursor: pointer;
+                //     transform: translateY(20px);
+                // }
                 
-                a {
-                    text-decoration: none;
-                    color: $whiteColor;
-                }
+                // a {
+                //     text-decoration: none;
+                //     color: $whiteColor;
+                // }
         }
         .social-facebook{
             font-size: 14px;

@@ -28,37 +28,37 @@
 }
 
 
-#login:checked ~ .header .switch-btn .login-btn {
+#login:checked ~ .header-inner .header  .login-btn {
     background-color: #fff;
     color: #333;
 }
 
-#register:checked ~ .header .switch-btn .register-btn {
+#register:checked ~ .header-inner .header  .register-btn {
     background-color: #fff;
     color: #333;
 }
 
-// #login:checked ~ .col-12 .register-content {
-//     display: block;
-//     z-index: 1;
-//     opacity: 1;
-// }
-
-#login:checked ~ .col-12 .form .form-input:focus + .active-email{
-    top:10px;
-    display:block;
-    padding: 0 10px;
-    background-color: $whiteColor;
-    font-size: 0.8rem;
-    color:  #6610f2;
+#login:checked ~ .col-12 .container .register-content {
+    display: block;
+    z-index: 1;
+    opacity: 1;
 }
 
-
-// #register:checked ~ .col-12 .login-content{
-//     display: block;
-//     z-index: 1;
-//     opacity: 1;
+// #login:checked ~ .col-12 .form .form-input:focus + .active-email{
+//     top:10px;
+//     display:block;
+//     padding: 0 10px;
+//     background-color: $whiteColor;
+//     font-size: 0.8rem;
+//     color:  #6610f2;
 // }
+
+
+#register:checked ~ .col-12 .container .login-content{
+    display: block;
+    z-index: 1;
+    opacity: 1;
+}
    
 
 
