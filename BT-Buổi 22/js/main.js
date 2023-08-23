@@ -131,18 +131,26 @@ console.log(myNested(arr));
 
 // Bài 4
 
-var arr1 = [1,2,3,4]
-
-var arr2 = arr1.reduce(function(prev,current){
-    return prev + current 
-},0);
-
-console.log(arr2);
-
-
-
- Array.prototype.reduce2 = function (prev,current) {
+ Array.prototype.reduce2 = function (callback,initial) {
     
-}
+        if (!this.length){
+            result `invalid input`
+        }
+        var result = initial !== undefined ? initial : this[0] ;
+        var star = initial !== undefined ? 0 : 1 ;
+        for (var i = star ; i <this.length ; i++) {
+            result = callback(result,this[i])
+        }
 
+        return result
+    }
+
+
+var arr =[1,2,3,4]
+
+arr1 =  arr.reduce2(function(prev,current){
+  return prev + current
+},0)
+
+console.log(arr1);
     

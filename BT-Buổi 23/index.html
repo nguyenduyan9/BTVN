@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,300&family=Sofia+Sans:wght@300;400;500;600;700;800;900&family=Titillium+Web:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <button class="btn-login" type="button">Đăng nhập</button>
+    <div class="modal">
+      <div class="overlay"></div>
+      <div class="modal-body">
+        <div class="modal-switch">
+          <button class="modal-button active">Đăng nhập</button>
+          <button class="modal-button">Đăng kí</button>
+        </div>
+        <div class="modal-inner auth-login">
+          <div class="social-title">với các tài khoản mạng xã hội</div>
+          <div class="modal-social">
+            <button class="modal-social-btn">
+              <i class="fa-brands social-icon fa-google-plus-g"></i>
+              <span class="social-name">Google</span>
+            </button>
+            <button class="modal-social-btn">
+              <i class="fa-brands social-icon fa-facebook"></i>
+              <span class="social-name">Facebook</span>
+            </button>
+          </div>
+          <div class="modal-or">
+            <span>hoặc</span>
+          </div>
+          <div class="auth-form">
+            <div class="auth-control">
+              <label class="auth-label" for="email">Email</label>
+              <div class="auth-row">
+                <input class="auth-email" type="email" placeholder="Email" />
+              </div>
+              <div class="error"></div>
+            </div>
+            <div class="auth-control">
+              <label class="auth-label" for="password">Mật Khẩu</label>
+              <div class="auth-row password">
+                <input
+                  class="auth-password"
+                  type="password"
+                  placeholder="Mật Khẩu"
+                />
+                <div class="auth-view">
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+              </div>
+            </div>
+            <div class="auth-control">
+              <button class="auth-forgot" type="button">Quên mật khẩu ?</button>
+            </div>
+
+            <div class="auth-control">
+              <button type="submit" class="btn">Đăng Nhập</button>
+            </div>
+          </div>
+        </div>
+        <!-- and log-in  -->
+        <!-- begin register-->
+
+        <div class="modal-inner auth-register hiden">
+          <div class="social-title">
+            Hoàn thành đăng kí, và bắt đầu trải nghiệm ngay!
+          </div>
+
+          <div class="auth-form">
+            <div class="auth-control">
+              <label class="auth-label" for="yourname">Họ và tên</label>
+              <div class="auth-row">
+                <input
+                  class="auth-input"
+                  id="yourname"
+                  type="text"
+                  placeholder="Họ và tên"
+                />
+              </div>
+            </div>
+            <div class="auth-control">
+              <label for="Email" class="auth-label">Email</label>
+              <div class="auth-row">
+                <input type="email" class="auth-input" placeholder="Email" />
+              </div>
+            </div>
+            <div class="auth-control">
+              <label class="auth-label" for="password">Mật khẩu</label>
+              <div class="auth-row password">
+                <input id="password" type="password" placeholder="Mật Khẩu" />
+                <div class="auth-view">
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+              </div>
+            </div>
+            <div class="auth-control">
+              <p class="auth-policy">
+                Bằng cách đăng ký tài khoản, bạn cũng đồng thời chấp nhận mọi
+                <a href="" class="auth-policy-link">
+                  điều kiện về qui định và chính sách của Dân trí</a
+                >
+              </p>
+            </div>
+
+            <div class="auth-control">
+              <button type="submit" class="btn">Đăng ký</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

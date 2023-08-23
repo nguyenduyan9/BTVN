@@ -1,0 +1,228 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "roboto",serif;
+    font-size: 10px;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+
+button {
+    border: none;
+}
+
+input {
+    outline: none;
+
+}
+
+a {
+    text-decoration: none;
+    color: #2361ff;
+}
+
+
+.modal {
+   position: fixed;
+   inset: 0;
+   display: flex;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background-color:rgba(0, 0, 0, .6);
+}
+
+.modal-body {
+    background-color: #fff;
+    position: relative;
+    max-width: 460px;
+    width: 100%;
+    margin:auto auto;
+}
+
+.modal-inner {
+    padding: 0 40px;
+}
+
+.modal-body .modal-switch {
+    display: flex;
+    justify-content: space-evenly;
+    height: 56px;
+}
+
+.modal-body .modal-switch .modal-button{
+    width: 100%;
+    font-size: 1.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: #999;
+}
+
+.modal-inner .social-title {
+    margin: 16px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+}
+
+.modal-inner .modal-social {
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.modal-inner .modal-social .modal-social-btn  {
+    height: 45px;
+    width: calc(50% - 10px);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e2e8f0;
+    cursor: pointer;
+}
+
+.modal-social .social-name {
+    font-size: 1.4rem;
+    color: #333;
+}
+
+.modal-social .social-icon {
+    font-size: 35px;
+    margin-right: 5px;
+    color: #3c5a99;
+}
+
+.modal-social .social-icon .fa-google-plus-g {
+    color: #fbbc05;
+}
+
+.modal-inner .modal-or {
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+}
+
+.modal-inner .modal-or span {
+    display: flex;
+    padding: 0 20px;
+    position:relative;
+    z-index: 1;
+    background-color: #fff;
+}
+
+.modal-inner .modal-or::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color:#f7f7f7;
+}
+
+/* end social */
+
+/* begin auth-form */
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.4rem;
+}
+
+.auth-form .auth-control {
+    margin-top: 16px;
+}
+
+.auth-form .auth-row {
+    margin-top: 2px;
+}
+
+.auth-form input {
+    width: 100%;
+    padding:12px 16px 10px 16px ;
+}
+
+.auth-control .password {
+    position: relative;
+}
+
+.auth-control .auth-view {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+}
+
+.auth-control .auth-forgot {
+    font-style: italic;
+    color: gray;
+    background-color: #fff;
+    float: right;
+}
+
+.auth-control .btn {
+    width: 100%;
+    background-color: #1a7900;
+    height: 44px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    color: #fff;
+    margin-bottom: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-login {
+    color: #333;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+}
+
+.modal.show {
+    display: block;
+}
+
+.overlay {
+    /* display: none; */
+}
+
+.modal-body .modal-button.active {
+    background-color: #fff;
+    color: #333;
+}
+
+
+
+ .hiden {
+   
+    display: none;
+}
+
+.error {
+    color: red;
+    font-style: italic;
+}
