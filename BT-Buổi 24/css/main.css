@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.content {
+    width: 100vw;
+    height: 100vh;
+    background: #8758ff;
+    display: flex;
+}
+
+.task-content {
+    padding: 32px;
+    width: 450px;
+    /* height: 200px; */
+    /* background: #000; */
+    margin: auto;
+    background-color: #1a1a40;
+    border-radius: 8px;
+    color: #fff;
+    text-align: center;
+}
+
+.task-content .task-form {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.task-content .task-form input {
+    flex: 1;
+    padding: 10px 10px;
+    /* color: #5f5f7a; */
+    /* margin-top: 50px; */
+}
+
+.task-content .task-form input[type="text"]:focus {
+    border: 1px solid #8758ff ;
+}
+
+.task-content .task-form input[type="text"] {
+    color:  #fff;
+    background-color:  #1a1a40;
+    border: #5b5f7a 1px solid;
+    font-size: 14px;
+}
+
+.task-content .task-form button {
+    width: 100px;
+    background-color: #8758ff;
+    padding: 10px 10px;
+    border:#8758ff 1px solid;
+    color: #fff;
+}
+
+.todolist {
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background:#8758ff ;
+    border-radius: 4px;
+    /* justify-content: space-between; */
+}
+
+.todolist p {
+    flex: 1;
+    align-items: center;
+    line-height: 50px;
+}
+
+.todolist .todo-icon {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: row; */
+    /* justify-content: space-evenly; */
+}
+
+.todolist .todo-icon .icon-trash,
+.todolist .todo-icon .icon-edit {
+    display: block;
+    width: 20px;
+    padding: 4px 4px;
+
+}
+
+.checked {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+/* .task-content .task-form input::placeholder Ơ */
