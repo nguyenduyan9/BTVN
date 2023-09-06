@@ -7,6 +7,7 @@ var dots = document.querySelectorAll(".list-btn li");
 
 var active = 0;
 var lengthItem = items.length - 1;
+
 console.log(lengthItem);
 next.addEventListener("click", function () {
   // active += 1;
@@ -20,8 +21,7 @@ next.addEventListener("click", function () {
 
 function carousel() {
   var leftItem = items[active].offsetLeft;
-  console.log(leftItem);
-  slider.style.left = -leftItem + `px`;
+  var position = (slider.style.left = -leftItem + `px`);
 
   var btnActive = document.querySelector(".list-btn li.active");
   btnActive.classList.remove("active");
@@ -46,8 +46,49 @@ dots.forEach(function (dot, key) {
   });
 });
 
-slider.addEventListener("mousedown", function () {
-  console.log("hi");
+var isDrag = false;
+var initialOffsetX;
+var itemWith;
+
+var rate = (10 * 1263) / 100;
+console.log(rate);
+slider.addEventListener("mousedown", function (e) {
+  isDrag = true;
+  initialOffsetX = e.offsetX;
 });
 
-slider.addEventListener();
+slider.addEventListener("mousemove", function (e) {
+  e.preventDefault();
+  if (isDrag) {
+    var currentOffsetX = e.offsetX;
+    var moveLength = currentOffsetX - initialOffsetX;
+    slider.style.transition = "none";
+    leftItem = items[active].offsetLeft;
+    slider.style.left = -leftItem + moveLength + `px`;
+    if (moveLength < 0 && Math.abs(moveLength) > rate) {
+      slider.style.transition = null;
+      slider.style.left = -leftItem + `px`;
+
+      if (active + 1 > lengthItem) {
+        active = 0;
+      } else {
+        active = active + 1;
+      }
+      carousel();
+    }
+    if (moveLength > 0 && Math.abs(moveLength) >= rate) {
+      if (active - 1 < 0) {
+        active = lengthItem;
+      } else {
+        active = active - 1;
+      }
+
+      carousel();
+    }
+  }
+  // console.log("hi");
+});
+
+slider.addEventListener("mouseup", function () {
+  isDrag = false;
+});
