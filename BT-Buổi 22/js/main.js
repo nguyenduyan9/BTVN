@@ -170,9 +170,10 @@ Array.prototype.reduce2 = function (callback, initial) {
   }
 };
 
+var total = 0;
 var result = arr.reduce2(function (prev, current) {
-  console.log(prev, current);
-  return current;
+  total = prev + current;
+  return total;
 }, 0);
 
 console.log(result);
