@@ -1,6 +1,6 @@
 var listItems = document.querySelectorAll(".list-item");
 var list = document.querySelector(".list");
-var body = document.body;
+content = document.querySelector(".content");
 var dragElement = null;
 
 var initialOffsetY;
