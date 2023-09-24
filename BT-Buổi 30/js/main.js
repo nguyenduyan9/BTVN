@@ -59,6 +59,6 @@ count.append(sp);
 content.addEventListener("input", function () {
   countEl = this.innerText.length;
   span.innerText = `Số ký tự ${countEl}`;
-  // CountText = countEl.trim().replace(/\s+/g, " ").splip(" ");
-  console.log(CountText.length);
+  console.log(this.innerText);
+  // console.log(CountText.length);
 });
