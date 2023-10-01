@@ -37,8 +37,8 @@ btnItalic.addEventListener("click", function () {
   document.execCommand("italic");
 });
 
-btnUnderlined.addEventListener(".btn-italic", function () {
-  document.execCommand("underlined");
+btnUnderlined.addEventListener("click", function () {
+  document.execCommand("underline");
 });
 
 btnColor.addEventListener("input", function () {
