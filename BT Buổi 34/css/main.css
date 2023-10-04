@@ -1,0 +1,215 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+
+
+body {
+    height: 100vh;
+    display: flex;
+}
+
+.content {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content .title h1 {
+    font-weight: lighter;
+}
+
+.content .title span {
+    color: #059669;
+}
+
+.content .todo-list {
+    margin-top: 32px;
+}
+
+.content .form-todo {
+    width: 735px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+}
+
+
+.content .todo-list #search-form {
+    width: 615px;
+    border-radius:8px ;
+    padding: 22px 16px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.content .todo-list #search-form:focus {
+    border: 2px solid #ccc;
+}
+
+.content .todo-list .btn {
+    height: 46px;
+    width: 112px;
+    border-radius: 8px;
+    background-color: #047857;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.content .todo-list .btn:hover {
+    opacity: 0.8;
+}
+
+input[type="search" i]::-webkit-search-cancel-button {
+    display: none;
+}
+
+
+.content .todo-list .search-icon {
+    display: block;
+    width: 48px;
+    height: 48px;
+    background-color: #1d4ed8;
+    position: absolute;
+    right: 130px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+/* modal */
+
+.modal {
+    width: 450px;
+    height: 186px;
+    background-color: #fff;
+    border-radius: 8px;
+    position: absolute;
+    z-index: 1000;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    padding: 20px 25px;
+    display: none;
+}
+
+.over.checked,
+.modal.checked {
+    display: block;
+}
+
+.modal input {
+    width: 100%;
+    height: 58px;
+    border-radius: 8px;
+    padding: 20px;
+    border: 1px solid #333;
+    font-size: 16px;
+}
+
+
+
+.modal .control {
+    margin-top: 42px;
+    display: flex;
+    padding: 0 100px;
+    justify-content: space-between;
+}
+
+.modal .btn-control {
+    height: 45px;
+    width: 75px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.over {
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background-color: rgba(55,65,81,.6);
+    display: none;
+}
+
+.save-control {
+    background-color: #047857;
+    color: #fff;
+}
+
+.cancel-control {
+    background-color: #fff;
+    color: #000;
+}
+
+.cancel-control:hover {
+    background-color: #f3f4f6;
+}
+
+/* next task */
+
+.content .todo-list .next-task {
+    width: 100%;
+    height: 72px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-top: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    /* display: none; */
+}
+
+.todo-list .next-task .icon-link {
+    position: absolute;
+    right: 0;
+    width: 170px;
+    padding: 0 16px;
+    height: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.todo-list .next-task .icon-link span {
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.todo-list .next-task .icon-link span i {
+    font-size: 18px;
+    color: #fff;
+}
+
+.delete-icon  {
+    background-color: #be123c;
+}
+
+.edit-icon {
+    background-color: #1d4ed8;
+}
+
+.check-icon {
+    background-color: #9ca3af;
+}
