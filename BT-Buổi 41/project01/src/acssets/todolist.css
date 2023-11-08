@@ -1,0 +1,25 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.todo-list {
+   max-width:  70%;
+    margin: 20px auto;
+}
+
+.todo-list .todo-form {
+    display: flex;
+    height: 30px;
+}
+
+.todo-list .todo-form input {
+    padding: 2px 8px;
+    width: 80%;
+}
+
+.todo-list .todo-form button {
+    flex: 1;
+}
+

@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    background-image:url("https://thethaodonga.com/wp-content/uploads/2023/05/hinh-anh-qua-bong-da-dep-2.jpg") ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    opacity: .9;
+}
+
+.content {
+    margin: auto;
+    color: #fff;
+    position: relative;
+}
+
+.content h2 {
+    width: 100%;
+    height: 100px;
+    background-color:  rgba(0,0,0,.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.answer {
+    margin-top: 20px;
+    display: flex;
+    gap:  20px;
+}
+.answer button {
+    line-height: 40px;
+    text-align: center;
+    /* height: 100px; */
+    flex-basis: calc(100% / 4);
+    background-color:  rgba(0,0,0,.5);
+    font-size: 24px;
+    border-radius: 8px;
+    color: #fff;
+    border: none;
+}
+
+.answer button:hover {
+    background-color: #0dcaf0;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: gold;
+    display: flex;
+    z-index: 1000;
+    /* margin: 50px 0; */
+}
+
+.start {
+    margin: auto;
+    width: 80px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    background-color: green;
+    color: #fff;
+}
+
+.overlay.active {
+    display: none;
+}
+
+.start.active {
+    display: none;
+}
+
+.progress {
+    width: 500px;
+    height: 15px;
+    border-radius: 8px;
+    /* border: 1px solid red; */
+    position: absolute;
+    /* margin: 1px auto; */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.timer-progress {
+    border-radius: 8px;
+    background-color: red;
+    height: 100%;
+    transition: width .2s ease;
+}
