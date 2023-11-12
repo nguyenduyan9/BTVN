@@ -36,7 +36,6 @@ export default function Input() {
 
   const handleChange = (e) => {
     setNumber(e.target.value);
-    console.log(e.target.value);
   };
 
   return (
