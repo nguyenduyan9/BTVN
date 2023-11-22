@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+.column-item {
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+  min-height: 500px;
+  column-gap: 20px;
+  border: 1px blue solid;
+  flex-direction: column;
+  .title {
+    background-color: #e5e5e5;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .btn {
+    width: 300px;
+    font-weight: 800;
+  }
+}
