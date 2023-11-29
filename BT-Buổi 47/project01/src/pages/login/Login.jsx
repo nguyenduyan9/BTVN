@@ -1,5 +1,5 @@
 import "./login.scss";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import fetchApi from "../../redux/middlewares/fetchApi";
 
@@ -12,7 +12,6 @@ export default function Login() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(email);
     dispatch(fetchApi(email));
   };
   return (

@@ -10,6 +10,16 @@ export default function getTasks(apiKey) {
       });
       dispatch({ type: "tasks/push", payload: tasksItem });
       dispatch({ type: "list/getList", payload: data.data });
+      dispatch({
+        type: "api/getEmail",
+        payload: data.data.apiKey,
+      });
     }
   };
 }
+
+export const postTasks = () => {
+  return async (dispatch) => {
+    const { data } = await client.post("/tasks", (body = {}), (api = null));
+  };
+};
